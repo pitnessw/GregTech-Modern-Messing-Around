@@ -87,7 +87,7 @@ public class MEPatternBufferPartMachine extends MEBusPartMachine
 
     protected static final ManagedFieldHolder MANAGED_FIELD_HOLDER = new ManagedFieldHolder(
             MEPatternBufferPartMachine.class, MEBusPartMachine.MANAGED_FIELD_HOLDER);
-    protected static final int MAX_PATTERN_COUNT = 54;
+    protected static final int MAX_PATTERN_COUNT = 27;
     private final InternalInventory internalPatternInventory = new InternalInventory() {
 
         @Override
@@ -285,7 +285,7 @@ public class MEPatternBufferPartMachine extends MEBusPartMachine
     @Override
     public Widget createUIWidget() {
         int rowSize = 9;
-        int colSize = 6;
+        int colSize = 3;
         var group = new WidgetGroup(0, 0, 18 * rowSize + 16, 18 * colSize + 16);
         int index = 0;
         for (int y = 0; y < colSize; ++y) {
